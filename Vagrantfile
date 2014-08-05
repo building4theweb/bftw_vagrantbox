@@ -23,5 +23,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, guest: 8080, host: 8080
 
   # Shell provisioning
-  config.vm.provision "shell", path: "https://gist.githubusercontent.com/froi/02c63dddce157b28abd4/raw/23a9fbec2cedad00e04bba90f7b33118bed48418/bftw_vagrant_config.sh"
+  config.vm.provision "shell", path: "https://raw.githubusercontent.com/building4theweb/bftw_vagrantbox/simpler/script.sh"
 end
