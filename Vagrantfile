@@ -58,7 +58,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # information on available options.
 
   # Shell provisioning
-  config.vm.provision "shell", path: "scripts/main.sh"
+  config.vm.provision "shell", path: "main.sh"
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
