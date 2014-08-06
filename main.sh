@@ -262,10 +262,9 @@ sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh
 sudo service ssh restart
 
 # Go
-mkdir /home/vagrant/go
 wget -P /home/vagrant/ http://golang.org/dl/go1.3.linux-amd64.tar.gz
 
-tar -xzf go1.3.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.3.linux-amd64.tar.gz
 
 echo "export GOROOT=$HOME/go" >> /home/vagrant/.bash_profile
-echo "export PATH=$PATH:$GOROOT/bin" >> /home/vagrant/.bash_profile
+echo "export PATH=$PATH:/usr/local/go/bin" >> /home/vagrant/.bash_profile
