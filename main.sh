@@ -1,13 +1,5 @@
 #! /bin/bash
 
-# Exit script immediately on first error.
-set -e
-
-# Print commands and their arguments as they are executed.
-set -x
-
-export DEBIAN_FRONTEND=noninteractive
-
 # apt-get
 
 ## Update all the things
